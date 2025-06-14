@@ -19,7 +19,7 @@ class Queue:
         :param elem: Элемент, который должен быть добавлен
         """
         self._list.append(elem)
-        print(self._list)# TODO реализовать метод enqueue
+        return self._list# TODO реализовать метод enqueue
 
     def dequeue(self) -> Any:
         """
@@ -31,7 +31,7 @@ class Queue:
         """
         if len(self._list) == 0:
             raise IndexError("Ошибка, очередь пуста")
-        self._list.pop(0)  # TODO реализовать метод dequeue
+        return self._list.pop(0)  # TODO реализовать метод dequeue
 
     def peek(self, ind: int = 0) -> Any:
         """
@@ -50,7 +50,7 @@ class Queue:
         if ind > len(self._list):
             raise IndexError("Индекс вне границ очереди")
 
-        print(self._list.count(ind))  # TODO реализовать метод peek
+        return self._list[ind]  # TODO реализовать метод peek
 
     def clear(self) -> None:
         """ Очистка очереди. """
@@ -58,7 +58,7 @@ class Queue:
 
     def __len__(self):
         """ Количество элементов в очереди. """
-        print(self._list.__len__())  # TODO реализовать метод __len__
+        return self._list.__len__()  # TODO реализовать метод __len__
 
 if __name__ == "__main__":
     queue = Queue()
