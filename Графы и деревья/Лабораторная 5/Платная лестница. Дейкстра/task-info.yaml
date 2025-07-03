@@ -13,8 +13,8 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
-      - offset: 657
+        status: Solved
+      - offset: 805
         length: 108
         placeholder_text: "...  # TODO записать взвешенный граф, а лучше написать функ\
       цию, которая формирует граф по стоимости ступеней"
@@ -24,7 +24,7 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: '...'
         selected: false
-        status: Unchecked
+        status: Solved
     learner_created: false
   - name: tests/test_task.py
     visible: false
@@ -39,5 +39,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 03 Jul 2025 09:12:13 UTC"
 record: -1

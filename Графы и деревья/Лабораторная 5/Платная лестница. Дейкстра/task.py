@@ -12,6 +12,12 @@ def stairway_path(graph: nx.DiGraph) -> Union[float, int]:
     :return: минимальная стоимость подъема на верхнюю ступень
     """
     ...  # TODO c помощью функции из модуля networkx найти стоимость кратчайшего пути до последней лестницы
+    start = 0
+    end = max(graph.nodes)
+
+    length = nx.dijkstra_path_length(graph, source=start, target=end, weight='weight')
+
+    return length
 
 
 if __name__ == '__main__':
